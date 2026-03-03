@@ -1,0 +1,90 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 60px 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+.tips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  width: 280px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.newsletter {
+  padding: 50px 20px;
+}
+
+.newsletter input {
+  padding: 12px;
+  width: 250px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+}
+
+.newsletter button {
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  margin-left: 10px;
+  background: white;
+  color: #fd1d1d;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.newsletter button:hover {
+  background: #333;
+  color: white;
+}
+
+footer {
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .tips {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+input{
+    margin: 5px;
+}
